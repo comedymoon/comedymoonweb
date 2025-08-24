@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: comedymoon-guard-advanced
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: PUBLIC_DIR
+        value: ./public
+      - key: POW_DIFFICULTY
+        value: "2"
+      # TG_BOT_TOKEN / TG_CHAT_ID / REDIS_URL / ADMIN_SECRET добавь в Dashboard
