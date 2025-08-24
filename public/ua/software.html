@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>comedymoon — Софт</title>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  
+  <canvas id="bg"></canvas>
+  
+  <div class="lang-floating">
+    <a href="../ua/software.html">UA</a>
+    <a href="../ru/software.html">RU</a>
+    <a href="../en/software.html">EN</a>
+  </div>
+
+  <div class="container">
+    <section class="hero">
+      <h1 class="brand">comedymoon</h1>
+      <div class="alias">або nocommand / lostcmd</div>
+      <div class="links">
+        <a class="link-btn" href="https://t.me/nocommand" target="_blank" rel="noopener">Telegram</a>
+        <a class="link-btn" href="https://github.com/comedymoon" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  
+    <div class="toolbar">
+      <div class="tabs">
+        <a class="tab" href="../ua/index.html">Про мене</a>
+        <a class="tab" href="../ua/teams.html">Де я знаходжусь</a>
+        <a class="tab active" href="../ua/software.html">Софт</a>
+      </div>
+    </div>
+  <article class="card">
+    <h2>Софт</h2>
+    <div class="programs">
+      <div class="program" data-id="vncreaper1"><h4>VNCReaper 1.0 / 1.2</h4><div class="meta">10.08.25</div></div>
+      <div class="program" data-id="vncreaper05"><h4>VNCReaper 0.5</h4><div class="meta">05.08.25</div></div>
+      <div class="program" data-id="yagey123"><h4>yagey123</h4><div class="meta">23.08.25</div></div>
+    </div>
+  </article>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="close">&times;</button>
+      <h2 class="modal-title"></h2>
+      <p class="modal-short"></p>
+      <p class="modal-long" style="color:#b9c2e8"></p>
+      <div class="modal-actions"></div>
+    </div>
+  </div>
+  <div id="download-sheet" class="sheet" hidden>
+    <div class="sheet-card">
+      <h3 class="sheet-title">Виберіть джерело завантаження</h3>
+      <div class="sheet-actions"></div>
+      <button onclick="document.getElementById('download-sheet').hidden=true" class="btn">Закрити</button>
+    </div>
+  </div>
+
+  <script src="../bg.js"></script>
+  <script src="software-ua.js"></script>
+  <script src="../soft-common.js"></script>
+</body>
+</html>
